@@ -85,12 +85,12 @@ const Show = () => {
 
       <div>
         <h2>Seasons</h2>
-        <Seasons Seasons={show._embedded.Seasons} />
+        <Seasons seasons={show._embedded.seasons} />
       </div>
 
       <div>
         <h2>Cast</h2>
-        <Cast Seasons={show._embedded.cast} />
+        <Cast cast={show._embedded.cast} />
       </div>
     </div>
   );
