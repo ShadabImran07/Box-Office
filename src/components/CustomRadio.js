@@ -1,5 +1,5 @@
 /* eslint-disable arrow-body-style */
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 
 const RadioWrapper = styled.label`
@@ -64,4 +64,4 @@ const CustomRadio = ({ label, ...restProps }) => {
   );
 };
 
-export default CustomRadio;
+export default memo(CustomRadio);
